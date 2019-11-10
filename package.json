@@ -1,0 +1,8 @@
+{
+  "name": "nuxt-page-transition",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:BolajiOlajide/nuxt-page-transition.git",
+  "author": "Bolaji Olajide",
+  "license": "MIT"
+}
