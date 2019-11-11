@@ -1,8 +1,21 @@
 {
   "name": "nuxt-page-transition",
-  "version": "0.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:BolajiOlajide/nuxt-page-transition.git",
+  "version": "1.0.0",
+  "description": "My wicked Nuxt.js project",
   "author": "Bolaji Olajide",
-  "license": "MIT"
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.4.0",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
 }
