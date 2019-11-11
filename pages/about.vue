@@ -3,21 +3,13 @@
     <div>
       <logo />
       <h1 class="title" style="color: #fff">
-        nuxt-page-transition
+        About It
       </h1>
-      <h2 class="subtitle" style="color: #fff">
-        My wicked Nuxt.js project
-      </h2>
       <div class="links">
         <NuxtLink
-          to="/about"
+          to="/"
           class="button--green"
-        >Next Page</NuxtLink>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >GitHub</a>
+        > Previous Page</NuxtLink>
       </div>
     </div>
   </section>
@@ -27,7 +19,7 @@
 import Logo from '~/components/Logo.vue'
 
 export default {
-  transition: 'page',
+  transition: 'bounce',
   components: {
     Logo
   }

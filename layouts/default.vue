@@ -15,6 +15,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  background: #47494c;
 }
 
 *,
@@ -46,10 +47,51 @@ html {
   text-decoration: none;
   padding: 10px 30px;
   margin-left: 15px;
+  background-color: #fff;
 }
 
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+
+.page-enter-active, .page-leave-active {
+  transition: all .25s ease-out;
+}
+
+.page-enter, .page-leave-active {
+  opacity: 0;
+  transform: scale(0.95);
+  transform-origin: 50% 50%;
+}
+
+.bounce-enter-active {
+  animation: bounce-in .8s;
+}
+.bounce-leave-active {
+  animation: bounce-out .5s;
+}
+@keyframes bounce-in {
+  0% { transform: scale(0) }
+  50% {
+    transform: scale(1.2);
+  }
+  100% { transform: scale(1) }
+}
+@keyframes bounce-out {
+  0% { transform: scale(1) }
+  50% { transform: scale(1.5) }
+  100% { transform: scale(0) }
+}
+
+.slide-left-enter,
+.slide-right-leave-active {
+  opacity: 0;
+  transform: translate(30px, 0);
+}
+.slide-left-leave-active,
+.slide-right-enter {
+  opacity: 0;
+  transform: translate(-30px, 0);
 }
 </style>
